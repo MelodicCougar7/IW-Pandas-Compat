@@ -1,10 +1,11 @@
 {
   "required": true,
   "minVersion": "0.8",
-  "package": "org.github.melodiccougar7.immersive_weathering_pandas_compat.mixin",
+  "package": "org.github.melodiccougar7.immersive_weathering_pandas_compat.mixins",
   "compatibilityLevel": "JAVA_8",
   "refmap": "immersive_weathering_pandas_compat.refmap.json",
   "mixins": [
+    "IWIvyDetection"
   ],
   "client": [
   ],
