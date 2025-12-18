@@ -21,6 +21,6 @@ public class IWIvyDetection {
         boolean original,
         @Local BlockState currentState
         ) {
-        return original || currentState.is((Block) ModBlocks.IVY);
+        return original || currentState.is(ModBlocks.IVY.get());
     }
 }
