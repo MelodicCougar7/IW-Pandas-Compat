@@ -7,6 +7,7 @@ import me.pandamods.fallingtrees.trees.GenericTree;
 
 import net.minecraft.core.HolderSet;
 import net.minecraft.world.level.block.Block;
+import net.minecraft.world.level.block.Blocks;
 import net.minecraft.world.level.block.state.BlockState;
 import org.spongepowered.asm.mixin.Mixin;
 import org.spongepowered.asm.mixin.injection.At;
@@ -21,6 +22,7 @@ public class IWIvyDetection {
         boolean original,
         @Local BlockState currentState
         ) {
-        return original || currentState.is(ModBlocks.IVY.get());
+        //return original || currentState.is(ModBlocks.IVY.get());
+        return original || currentState.is(Blocks.RAW_GOLD_BLOCK); // this doesn't work either
     }
 }
